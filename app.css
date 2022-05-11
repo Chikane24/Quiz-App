@@ -10,18 +10,16 @@ body{
     color: #333;
 }
 
-h1,
-h2{
+h1{
     color: #56a5eb;
     margin-bottom: 5rem;
-}
-
-h1{
     font-size: 5.4rem;
 }
 
 h2{
+    color: #56a5eb;
     font-size: 2.5rem;
+    margin-bottom: 4rem;
 }
 
 /* Utilities */

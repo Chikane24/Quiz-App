@@ -1,5 +1,7 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
+const hudQueCounter = document.getElementById("questionCounter");
+const hudScore = document.getElementById("score");
 
 let currentQuestion = {};
 let acceptAns = false;
@@ -55,6 +57,8 @@ let nextQuestion = () =>{
     }
 
     questionCounter++;
+    hudQueCounter.innerText = questionCounter + "/" + MAX_QUE;
+
     let questionIndex = Math.floor(Math.random() * availableQuestion.length);
     currentQuestion = availableQuestion[questionIndex];
     question.innerText = currentQuestion.question;
@@ -78,7 +82,13 @@ choices.forEach(choice => {
         let selectedAns = selectedChoice.dataset['number'];
         //console.log(selectedAns);
 
-        let classToApply = selectedAns == currentQuestion.answer ? 'correct' : 'incorrect';
+        let classToApply = (selectedAns == currentQuestion.answer) ? 'correct' : 'incorrect';
+
+        if(classToApply == 'correct')
+        {
+            incrementScore();
+        }
+
         selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(()=>{
@@ -88,5 +98,10 @@ choices.forEach(choice => {
        
     })
 })
+
+let incrementScore = () => {
+    score += BONUS;
+    hudScore.innerText = score;
+}
 
 startQuiz();
