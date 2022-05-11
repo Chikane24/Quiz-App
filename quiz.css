@@ -16,6 +16,7 @@
 
 .choice-text{
     padding: 0.8rem;
+    width: 100%;
 }
 
 .choice-container:hover{
@@ -23,4 +24,12 @@
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
     transform: scaleX(1.05);
     transition: transform 150ms;
+}
+
+.correct{
+    background-color: rgb(27, 234, 19);
+}
+
+.incorrect{
+    background-color: rgb(245, 69, 69);
 }
