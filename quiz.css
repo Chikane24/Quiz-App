@@ -1,16 +1,26 @@
-.container{
-    width: 100vw;
-    height: 100vh;
-    background-color: aliceblue;
+.choice-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border: 0.1rem solid rgb(182, 211, 236);
+    background-color: white;
 }
 
-.justify-content{
-    justify-content: flex-start;
+.choice-prefix{
+    padding: 0.8rem 1.6rem;
+    background-color: #56a5eb;
+    color: white;
 }
 
-.flex-column{
-    flex-flow: column;
+.choice-text{
+    padding: 0.8rem;
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: scaleX(1.05);
+    transition: transform 150ms;
 }

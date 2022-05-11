@@ -10,10 +10,18 @@ body{
     color: #333;
 }
 
-h1{
-    font-size: 5.4rem;
+h1,
+h2{
     color: #56a5eb;
     margin-bottom: 5rem;
+}
+
+h1{
+    font-size: 5.4rem;
+}
+
+h2{
+    font-size: 2.5rem;
 }
 
 /* Utilities */
@@ -40,6 +48,11 @@ h1{
 .flex-column{
     display: flex;
     flex-flow: column;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
 }
 
 .text-center{
