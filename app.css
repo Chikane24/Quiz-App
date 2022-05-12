@@ -12,7 +12,7 @@ body{
 
 h1{
     color: #56a5eb;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     font-size: 5.4rem;
 }
 
@@ -87,4 +87,23 @@ h2{
     cursor: not-allowed;
     transform: none;
     transition: none;
+}
+
+/* Input */
+
+form{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+input{
+    margin-bottom: 1rem;
+    width: 20rem;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    text-align: center;
+    border-color: white;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }

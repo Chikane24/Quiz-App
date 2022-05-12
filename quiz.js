@@ -52,6 +52,7 @@ let nextQuestion = () =>{
 
     if(availableQuestion.length === 0 || availableQuestion >= MAX_QUE)
     {
+        localStorage.setItem("recentScore",score);
         //go to the end page
         return window.location.assign("end.html")
     }
